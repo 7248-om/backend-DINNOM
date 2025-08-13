@@ -1,4 +1,4 @@
-import User from '../models/user.js';
+import User from '../models/User.js';
 
 // @desc    Get user's addresses
 // @route   GET /api/users/addresses
