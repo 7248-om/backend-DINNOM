@@ -45,7 +45,13 @@ if (!admin.apps.length) {
 // Express App Setup
 // --------------------
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://dinnom-hswk1.vercel.app", // ✅ your deployed frontend
+    "http://localhost:5173" // ✅ for local development
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 // --------------------
