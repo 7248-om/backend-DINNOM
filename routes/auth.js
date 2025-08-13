@@ -3,7 +3,7 @@
 import express from 'express';
 import admin from 'firebase-admin';
 import jwt from 'jsonwebtoken';
-import User from '../models/user.js'; // ✅ lowercase filename import
+import User from '../models/User.js'; // ✅ lowercase filename import
 
 const router = express.Router();
 
